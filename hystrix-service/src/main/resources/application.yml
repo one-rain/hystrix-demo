@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: hystrix-service
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html
+
+server:
+  port: 8080
+
+#自定义参数配置
+customize:
+  hystrix:
+    test:
+      exception: success
